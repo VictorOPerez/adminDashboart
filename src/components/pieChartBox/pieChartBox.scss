@@ -24,6 +24,10 @@
     justify-content: space-between;
     gap: 10px;
     font-size: 14px;
+
+    @include sm {
+      flex-wrap: wrap;
+    }
   }
 
   .option {
@@ -31,6 +35,9 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    @include sm {
+      gap: 3px;
+    }
   }
   .title {
     display: flex;

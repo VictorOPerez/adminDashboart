@@ -8,6 +8,10 @@
     flex-direction: column;
     min-height: 300px;
   }
+  // @include sm {
+  //   width: 230px;
+  //   background-color: red;
+  // }
 
   .boxInfo {
     flex: 3;

@@ -24,6 +24,10 @@
     padding: 20px;
     border-radius: 10px;
     border: 1px solid $soft-bg;
+    @include sm {
+      // width: calc(100% - 70px);
+      padding: 5px;
+    }
   }
   .box1 {
     grid-column: span 1;
