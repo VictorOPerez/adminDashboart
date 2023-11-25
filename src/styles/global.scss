@@ -1,3 +1,6 @@
+@import "./variables.scss";
+@import "./responsive.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +10,30 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main {
+  font-family: "Iner", sans-serif;
+  background-color: $main-bg;
+  color: $main-color;
+}
+.container {
+  display: flex;
+}
+
+.menuContainer {
+  max-width: 200px;
+  border-right: 2px solid $soft-bg;
+  padding: 5px 20px;
+
+  @include lg {
+    width: max-content;
+  }
+}
+
+.contentContainer {
+  width: 80%;
+  flex: 1;
+
+  padding: 5px 20px;
 }
